@@ -12,7 +12,7 @@
 <code class="language-sql">
 select COUNT(*) from `lottery_tickets`
 where timezone = :timezone
-where (
+and (
     exists (
         select * from `lotteries` where `lottery_tickets`.`lottery_id` = `lotteries`.`id`
         and `timezone` = :timezone )
