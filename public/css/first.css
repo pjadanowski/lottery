@@ -1,0 +1,52 @@
+html, body, #app {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main, .wrapper{
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter {
+    background-color: #D7C5AF;
+    background-image: linear-gradient(135deg, #D7C5AF 25%, #E2DAD7 100%);
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.bg {
+    background-image: url("../img/counter.png");
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width: 112px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+}
+
+.bg:before {
+    content: url("../img/line.png");
+    position: absolute;
+    top: 30px;
+    left: 4px;
+    /* background-repeat: no-repeat; */
+}
+
+.bg .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.text {
+    text-align: center;
+    font-weight: bold;
+}
